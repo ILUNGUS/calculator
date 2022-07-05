@@ -163,7 +163,7 @@ namespace Calculator
             {
                 double n1;
                 n1 = Convert.ToDouble(textBox1.Text);
-                n1 /= 100;
+                n1 = n1 / 100 * Convert.ToDouble(first);
                 second = Convert.ToString(n1);
                 textBox2.Text += " " + second;
                 textBox1.Text = second;
